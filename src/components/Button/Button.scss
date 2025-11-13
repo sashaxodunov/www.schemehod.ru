@@ -1,0 +1,18 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 0.3em;
+  padding: 6px 10px;
+  background: var(--accent);
+//  border: var(--border);
+  border-radius: var(--border-radius-m);
+  font-size: 14px;
+  color: #000;
+  line-height: 1;
+  transition: background-color 0.2s ease-in;
+
+  @include hover {
+//    color: var(--color-white);
+    background-color: #fcc54e;
+  }
+}

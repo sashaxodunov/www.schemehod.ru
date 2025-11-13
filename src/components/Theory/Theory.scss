@@ -1,0 +1,56 @@
+
+.section-theory {
+
+  height: 750px;
+  display: flex;
+  align-items: center;
+
+  background-image: url(../../assets/images/theory.jpg);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+
+}
+
+.section-theory-title {
+  margin-bottom: 10px;
+  font-family: var(--font-accent);
+  font-size: clamp(2.625rem, 1.875rem + 3.75vw, 4.688rem);
+  font-weight: 900;
+
+  letter-spacing: 3px;
+}
+
+.section-theory-desc {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 2;
+  color: #fff;
+  font-weight: 300;
+  font-family: var(--font-roboto);
+}
+
+
+.section-theory-desc p + p {
+  margin-top: 1em;
+}
+
+.section-theory-btn-wrapper a {
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: 0.26em;
+  line-height: 1;
+  transition: background-color 0.2s ease-in;
+  font-family: var(--font-accent);
+}
+
+@media (max-width: 600px) {
+  .section-theory {
+    height: auto;
+    padding: 100px 0;
+  }
+}

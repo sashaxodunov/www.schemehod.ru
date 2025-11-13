@@ -1,0 +1,56 @@
+
+.section-сalculator {
+
+  height: 750px;
+  display: flex;
+  align-items: center;
+
+  background-image: url(../../assets/images/i.jpeg);
+
+background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
+
+  clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
+
+}
+
+.section-сalculator-title {
+  margin-bottom: 10px;
+  font-family: var(--font-accent), sans-serif;
+  font-size: clamp(2.625rem, 1.875rem + 3.75vw, 4.688rem);
+  font-weight: 900;
+
+  letter-spacing: 3px;
+}
+
+.section-сalculator-desc {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 2;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: var(--font-roboto), sans-serif;
+}
+
+
+.section-сalculator-desc p + p {
+  margin-top: 1em;
+}
+
+.section-сalculator-btn-wrapper a {
+  padding: 15px 30px;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: 0.26em;
+  line-height: 1;
+  transition: background-color 0.2s ease-in;
+  font-family: var(--font-accent), sans-serif;
+}
+
+@media (max-width: 600px) {
+  .section-сalculator {
+    height: auto;
+    padding: 100px 0;
+  }
+}
