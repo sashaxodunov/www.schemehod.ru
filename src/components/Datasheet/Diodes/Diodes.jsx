@@ -1,4 +1,4 @@
-import Slider from '@/layouts/Slider/Slider'
+
 import './Diodes.scss'
 
 export default (props) => {
@@ -10,8 +10,8 @@ export default (props) => {
     <>
       <section className="section-resistors">
         <div className="container">
-          <h2 className="section-сalculator-title">{title}</h2>
-          <div className="section-сalculator-desc">
+          <h2 className="section-datasheet-title">{title}</h2>
+          <div className="section-datasheet-desc">
             <p>
               Это электронный компонент, который позволяет электрическому току
               течь только в одном направлении. Он состоит из полупроводникового
@@ -23,7 +23,7 @@ export default (props) => {
               генерации и управления сигналами в электронных устройствах.
             </p>
           </div>
-          <div className="section-сalculator-btn-wrapper">
+          <div className="section-datasheet-btn-wrapper">
             <a
               className="button"
               href="#!"
@@ -32,7 +32,6 @@ export default (props) => {
           </div>
         </div>
       </section>
-      <Slider />
     </>
   )
 }

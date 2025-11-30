@@ -9,8 +9,8 @@ export default (props) => {
     <>
       <section className="section-resistors">
         <div className="container">
-          <h2 className="section-сalculator-title">{title}</h2>
-          <div className="section-сalculator-desc">
+          <h2 className="section-datasheet-title">{title}</h2>
+          <div className="section-datasheet-desc">
             <p>
               Это электронный компонент, которые создают или стабилизируют
               электрические колебания с точной частотой.
@@ -18,7 +18,7 @@ export default (props) => {
               устройств.
             </p>
           </div>
-          <div className="section-сalculator-btn-wrapper">
+          <div className="section-datasheet-btn-wrapper">
             <a
               className="button"
               href="#!"

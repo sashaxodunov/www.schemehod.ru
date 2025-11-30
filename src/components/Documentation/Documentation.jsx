@@ -4,7 +4,7 @@ import clsx from 'clsx'
 export default (props) => {
   const { className, loading = 'lazy' } = props
 
-  const title = 'Принципиальные схемы'
+  const title = 'Cхемы'
 
   return (
     <>

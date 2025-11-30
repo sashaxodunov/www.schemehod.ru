@@ -1,0 +1,134 @@
+.card__body {
+  margin: 40px auto;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .demo-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    max-width: 1500px;
+    width: 100%;
+  }
+
+  .card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(212, 159, 159, 0.2);
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .front-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    transition:
+      transform 0.6s cubic-bezier(0.23, 1, 0.32, 1),
+      opacity 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    will-change: transform;
+    text-shadow:
+      1px 1px 2px rgb(231, 214, 214),
+      0 0 20px rgb(255, 153, 0),
+      0 0 5px rgb(173, 32, 51);
+  }
+
+  .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%);
+    color: #e8e8e8;
+    padding: 20px;
+    line-height: 1.5;
+    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    will-change: transform;
+  }
+
+  .content .heading {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  .content p:not(.heading) {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  /* Снизу */
+  .card.from-bottom .content {
+    transform: translate(0, 96%);
+  }
+
+  .card.from-bottom:hover .content {
+    transform: translate(0, 0);
+  }
+
+  .card.from-bottom:hover .front-content {
+    transform: translate(0, -30%);
+  }
+
+  /* Сверху */
+  .card.from-top .content {
+    transform: translate(0, -96%);
+  }
+
+  .card.from-top:hover .content {
+    transform: translate(0, 0);
+  }
+
+  .card.from-top:hover .front-content {
+    transform: translate(0, 30%);
+  }
+
+  /* Слева */
+  .card.from-left .content {
+    transform: translate(-96%, 0);
+  }
+
+  .card.from-left:hover .content {
+    transform: translate(0, 0);
+  }
+
+  .card.from-left:hover .front-content {
+    transform: translate(30%, 0);
+  }
+
+  /* Справа */
+  .card.from-right .content {
+    transform: translate(96%, 0);
+  }
+
+  .card.from-right:hover .content {
+    transform: translate(0, 0);
+  }
+
+  .card.from-right:hover .front-content {
+    transform: translate(-30%, 0);
+  }
+
+  /* Скрытие текста при hover */
+  .card:hover .front-content {
+    opacity: 0;
+  }
+}

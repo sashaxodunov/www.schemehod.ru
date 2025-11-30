@@ -1,3 +1,6 @@
+
+оы код слай
+
 const track = document.querySelector('.carousel-track') // Получаем трек слайдов
 let slides = Array.from(track.children) // Массив слайдов
 const nextBtn = document.querySelector('.carousel-btn.next') // Кнопка "вперед"

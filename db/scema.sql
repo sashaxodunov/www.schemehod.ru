@@ -66,7 +66,6 @@ INSERT INTO firmware (device_id, fw_type, version, region, file_url, notes) VALU
 
 1. Устройство (devices)
 Поле	Пример заполнения	Описание
-category	notebook	Категория устройства (см. ENUM)
 brand	Dell	Производитель
 model	XPS 15 9500	Модель
 platform_code	TACOMA13-SKL	Код платформы / платы
@@ -78,9 +77,8 @@ generation	10th Gen	Поколение процессора/устройства
 device_type	MainBoard	Тип устройства на плате
 cpu_family	Intel Core i7	Семейство CPU
 gpu	NVIDIA GTX 1650	Графика
-soc	Intel Comet Lake	Система-на-чипе
+memory_gpu	Intel Comet Lake	Память видео
 memory_type	DDR4	Тип памяти
-firmware_type	BIOS	Тип прошивки
 bios_vendor	American Megatrends	Вендор BIOS
 superio	ITE IT8788	Контроллер SuperIO
 main_chipset	Intel HM470	Основной чипсет

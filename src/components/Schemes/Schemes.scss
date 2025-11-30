@@ -35,6 +35,8 @@
   overflow: hidden;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
   height: 400px;
+      max-width: 100%;
+    height: auto;
 }
 
 .schemes__card::before {
@@ -91,10 +93,27 @@
   .schemes__card-name {
     font-size: 32px;
   }
+  .schemes__grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px 30px;
+}
 }
 
 @media (max-width: 600px) {
   .schemes__card {
     border-radius: 10px;
   }
+  .schemes__grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px 30px;
+}
+}
+
+@media (max-width: 400px) {
+  .schemes__grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 25px 20px;
+    margin: 0 auto;        
+  }
+
 }

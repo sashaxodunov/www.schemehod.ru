@@ -1,6 +1,4 @@
-
 .section-theory {
-
   height: 750px;
   display: flex;
   align-items: center;
@@ -12,7 +10,6 @@
   background-position: center bottom;
 
   clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
-
 }
 
 .section-theory-title {
@@ -33,7 +30,6 @@
   font-family: var(--font-roboto);
 }
 
-
 .section-theory-desc p + p {
   margin-top: 1em;
 }
@@ -48,9 +44,24 @@
   font-family: var(--font-accent);
 }
 
+@media (max-width: 1200px) {
+  .section-theory {
+    height: 650px;
+  }
+}
+
+@media (max-width: 800px) {
+  .section-theory {
+    height: 550px;
+  }
+}
+
 @media (max-width: 600px) {
   .section-theory {
     height: auto;
     padding: 100px 0;
+  }
+    .section-theory {
+    height: 450px;
   }
 }

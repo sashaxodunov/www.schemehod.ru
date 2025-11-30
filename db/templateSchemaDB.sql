@@ -3,8 +3,8 @@
 
 -- 'notebook', 'desktop', 'motherboard', 'monitor', 'tv', 'tablet', 'smartphone', 'printer', 'projector', 'power_supply',
 -- ========================
-INSERT INTO devices (category, brand, model, platform_code, board_code, board_pn, board_assy, series, generation, device_type, cpu_family, gpu, soc, memory_type, firmware_type, bios_vendor, superio, main_chipset, notes) VALUES
-('Laptop', 'Samsung', 'TACOMA13‑SKL', 'SKL', 'TACOMA13‑SKL', 'BA92‑15596B', 'BA41‑02466A', 'TACOMA13', '6th Gen', 'Notebook', 'Intel Core i5/i7 6xxx', 'Intel HD Graphics 520/530', 'Intel Skylake‑SoC', 'DDR4', 'UEFI', 'Samsung', 'ITE IT8620E', 'Intel HM170', 'Samsung notebook motherboard SKL platform');
+INSERT INTO devices (brand, model, platform_code, board_code, board_pn, board_assy, series, generation, device_type, cpu_family, gpu, soc, memory_type, firmware_type, bios_vendor, superio, main_chipset, notes) VALUES
+('Samsung', 'TACOMA13‑SKL', 'SKL', 'TACOMA13‑SKL', 'BA92‑15596B', 'BA41‑02466A', 'TACOMA13', '6th Gen', 'Notebook', 'Intel Core i5/i7 6xxx', 'Intel HD Graphics 520/530', 'Intel Skylake‑SoC', 'DDR4', 'UEFI', 'Samsung', 'ITE IT8620E', 'Intel HM170', 'Samsung notebook motherboard SKL platform');
 
 -- ========================
 -- 2. Документы (documents)
