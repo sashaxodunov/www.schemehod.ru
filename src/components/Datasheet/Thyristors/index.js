@@ -1,3 +1,3 @@
-import Resistors from './Thyristors.jsx'
+import Thyristors from './Thyristors.jsx'
 
-export default Resistors
+export default Thyristors

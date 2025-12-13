@@ -1,9 +1,33 @@
 import './Power.scss'
+import HoverCards from '@/sections/HoverCards'
 
 export default (props) => {
   const { className, loading = 'lazy' } = props
 
   const title = 'Источники питания'
+   const items = [
+    {
+      titleCard: 'Аккумуляторы',
+      titleFrom: 'Аккумуляторы',
+      titleText: 'Это пассивный электрический компонент, предназначенный для ограничения или регулирования потока электрического тока в цепи.', 
+      href: '/Datasheet/power/rectifier',
+      img: '/images/Datasheet/Power/Inner/1.jpg',
+    },
+    {
+      titleCard: 'Батарейки',
+      titleFrom: 'Батарейки',
+      titleText: 'Это тип резистора, предназначенный для поверхностного монтажа на печатной плате.',
+      href: '/Datasheet/power/pulse',
+      img: '/images/Datasheet/Power/Inner/2.jpg',
+    },
+    {
+      titleCard: 'Суперконденсаторы',
+      titleFrom: 'Суперконденсаторы',
+      titleText: 'Сопротивление которого можно изменять в пределах определённого диапазона.',
+      href: '/Datasheet/power/highFrequency',
+      img: '/images/Datasheet/Power/Inner/3.jpg',
+    },
+  ]
 
   return (
     <>
@@ -26,6 +50,9 @@ export default (props) => {
           </div>
         </div>
       </section>
+                        <HoverCards 
+                          items={items}
+                        />
     </>
   )
 }

@@ -1,9 +1,19 @@
 import './Lamps.scss'
+import HoverCards from '@/sections/HoverCards'
 
 export default (props) => {
   const { className, loading = 'lazy' } = props
 
   const title = 'Лампы'
+   const items = [
+    {
+      titleCard: 'Газоразрядные',
+      titleFrom: 'Газоразрядные',
+      titleText: 'Это пассивный электрический компонент, предназначенный для ограничения или регулирования потока электрического тока в цепи.', 
+      href: '/Datasheet/lamps/gasDischargers',
+      img: '/images/Datasheet/lamps/Inner/1.jpg',
+    },
+  ]
 
   return (
     <>
@@ -28,6 +38,9 @@ export default (props) => {
           </div>
         </div>
       </section>
+                        <HoverCards 
+                          items={items}
+                        />
     </>
   )
 }

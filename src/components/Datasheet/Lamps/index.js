@@ -1,3 +1,3 @@
-import Resistors from './Lamps.jsx'
+import Lamps from './Lamps.jsx'
 
-export default Resistors
+export default Lamps

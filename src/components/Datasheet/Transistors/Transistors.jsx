@@ -1,9 +1,47 @@
 import './Transistors.scss'
+import HoverCards from '@/sections/HoverCards'
 
 export default (props) => {
   const { className, loading = 'lazy' } = props
 
   const title = 'Транзисторы'
+   const items = [
+    {
+      titleCard: 'NPN-транзистор',
+      titleFrom: 'NPN-транзистор',
+      titleText: 'Это пассивный электрический компонент, предназначенный для ограничения или регулирования потока электрического тока в цепи.', 
+      href: '/Datasheet/transistors/npn',
+      img: '/images/Datasheet/Transistors/Inner/1.jpg',
+    },
+    {
+      titleCard: 'PNP-транзистор',
+      titleFrom: 'PNP-транзистор',
+      titleText: 'Это тип резистора, предназначенный для поверхностного монтажа на печатной плате.',
+      href: '/Datasheet/transistors/pnp',
+      img: '/images/Datasheet/Transistors/Inner/2.jpg',
+    },
+    {
+      titleCard: 'MOSFET',
+      titleFrom: 'MOSFET',
+      titleText: 'Сопротивление которого можно изменять в пределах определённого диапазона.',
+      href: '/Datasheet/transistors/mosfet',
+      img: '/images/Datasheet/Transistors/Inner/3.jpg',
+    },
+    {
+      titleCard: 'JFET',
+      titleFrom: 'JFET',
+      titleText: 'Регулируемое сопротивление, которое позволяет точно настраивать параметры электрической цепи.',
+      href: '/Datasheet/transistors/jfet',
+      img: '/images/Datasheet/Transistors/Inner/4.jpg',
+    },
+    {
+      titleCard: 'IGBT',
+      titleFrom: 'IGBT',
+      titleText: 'Сопротивление которого уменьшается с повышением температуры.',
+      href: '/Datasheet/transistors/igbt',
+      img: '/images/Datasheet/Transistors/Inner/5.jpg',
+    },
+  ]
 
   return (
     <>
@@ -30,6 +68,9 @@ export default (props) => {
           </div>
         </div>
       </section>
+                        <HoverCards 
+                          items={items}
+                        />
     </>
   )
 }

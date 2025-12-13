@@ -1,9 +1,26 @@
 import './Protective.scss'
+import HoverCards from '@/sections/HoverCards'
 
 export default (props) => {
   const { className, loading = 'lazy' } = props
 
   const title = 'Защитные устройства'
+   const items = [
+    {
+      titleCard: 'Плавкие',
+      titleFrom: 'Плавкие',
+      titleText: 'Это пассивный электрический компонент, предназначенный для ограничения или регулирования потока электрического тока в цепи.', 
+      href: '/Datasheet/protective/fusible',
+      img: '/images/Datasheet/Protective/Inner/1.jpg',
+    },
+    {
+      titleCard: 'Полимерные',
+      titleFrom: 'Полимерные',
+      titleText: 'Это тип резистора, предназначенный для поверхностного монтажа на печатной плате.',
+      href: '/Datasheet/protective/polymer',
+      img: '/images/Datasheet/Protective/Inner/2.jpg',
+    },
+  ]
 
   return (
     <>
@@ -27,6 +44,9 @@ export default (props) => {
           </div>
         </div>
       </section>
+                        <HoverCards 
+                          items={items}
+                        />
     </>
   )
 }

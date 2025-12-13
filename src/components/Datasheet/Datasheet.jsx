@@ -63,7 +63,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/transistors"} className="datasheet__card">
+          <a href={"/Datasheet/thyristors"} className="datasheet__card">
             <h3 className="datasheet__card-name">Тиристоры</h3>
             <img
               className="datasheet__card-img"

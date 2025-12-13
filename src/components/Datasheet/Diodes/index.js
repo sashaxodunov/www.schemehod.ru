@@ -1,3 +1,3 @@
-import Resistors from './Diodes.jsx'
+import Diodes from './Diodes.jsx'
 
-export default Resistors
+export default Diodes
