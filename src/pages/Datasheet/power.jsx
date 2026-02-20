@@ -1,4 +1,4 @@
-import Power from '@/components/Datasheet/Power'
+import Power from '@/components/Datasheet/Powers'
 
 export const metadata = {
   title: 'Power',

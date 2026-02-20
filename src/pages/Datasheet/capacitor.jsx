@@ -1,13 +1,13 @@
-import Capacitor from '@/components/Datasheet/Capacitor'
+import Capacitors from '@/components/Datasheet/Capacitors'
 
 export const metadata = {
-  title: 'Capacitor',
+  title: 'Capacitors',
 }
 
 export default () => {
   return (
     <>
-      <Capacitor />
+      <Capacitors />
     </>
   )
 }

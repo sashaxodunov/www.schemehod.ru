@@ -1,4 +1,4 @@
-import Inductance from '@/components/Datasheet/Inductance'
+import Inductance from '@/components/Datasheet/Inductances'
 
 export const metadata = {
   title: 'Inductance',

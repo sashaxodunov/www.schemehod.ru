@@ -1,4 +1,4 @@
-import Protective from '@/components/Datasheet/Protective'
+import Protective from '@/components/Datasheet/Protectives'
 
 export const metadata = {
   title: 'Protective',

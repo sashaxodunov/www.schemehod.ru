@@ -1,4 +1,4 @@
-import Optoelectronic from '@/components/Datasheet/Optoelectronic'
+import Optoelectronic from '@/components/Datasheet/Optoelectronics'
 
 export const metadata = {
   title: 'Optoelectronic',

@@ -1,4 +1,4 @@
-import Electromechanical from '@/components/Datasheet/Electromechanical'
+import Electromechanical from '@/components/Datasheet/Electromechanicals'
 
 export const metadata = {
   title: 'Electromechanical',

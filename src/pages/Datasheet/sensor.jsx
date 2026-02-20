@@ -1,4 +1,4 @@
-import Sensor from '@/components/Datasheet/Sensor'
+import Sensor from '@/components/Datasheet/Sensors'
 
 export const metadata = {
   title: 'Sensor',

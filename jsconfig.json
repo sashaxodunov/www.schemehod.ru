@@ -5,5 +5,5 @@
       "@/*": ["src/*"]
     }
   },
-  "include": ["src", "src/components/Datasheet/Optoelectronic/Display/Display.jsx"]
+  "include": ["src", "src/components/Datasheet/Optoelectronics/Display/Display.jsx"]
 }

@@ -8,13 +8,14 @@ export default (props) => {
   return (
     <>
       <section className="section section__datasheet">
-
         <header className="datasheet__header">
           <h2 className="datasheet__title">{title}</h2>
           <p>
-            Документ, который объединяет в себе технические характеристики продукта, материала, компонента (например,
-            электронного) или подсистемы. Техническая спецификация, карта данных — документ, который объединяет в себе
-            технические характеристики электронного компонента
+            Документ, который объединяет в себе технические характеристики
+            продукта, материала, компонента (например, электронного) или
+            подсистемы. Техническая спецификация, карта данных — документ,
+            который объединяет в себе технические характеристики электронного
+            компонента
           </p>
         </header>
 
@@ -30,7 +31,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/capacitor"} className="datasheet__card">
+          <a href={'/Datasheet/capacitor'} className="datasheet__card">
             <h3 className="datasheet__card-name">Конденсаторы</h3>
             <img
               className="datasheet__card-img"
@@ -41,7 +42,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/inductance"} className="datasheet__card">
+          <a href={'/Datasheet/inductance'} className="datasheet__card">
             <h3 className="datasheet__card-name">Индуктивности</h3>
             <img
               className="datasheet__card-img"
@@ -52,7 +53,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/diodes"} className="datasheet__card">
+          <a href={'/Datasheet/diode'} className="datasheet__card">
             <h3 className="datasheet__card-name">Диоды</h3>
             <img
               className="datasheet__card-img"
@@ -63,7 +64,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/thyristors"} className="datasheet__card">
+          <a href={'/Datasheet/thyristor'} className="datasheet__card">
             <h3 className="datasheet__card-name">Тиристоры</h3>
             <img
               className="datasheet__card-img"
@@ -74,7 +75,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/transistors"} className="datasheet__card">
+          <a href={'/Datasheet/transistor'} className="datasheet__card">
             <h3 className="datasheet__card-name">Транзисторы</h3>
             <img
               className="datasheet__card-img"
@@ -85,7 +86,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/optoelectronic"} className="datasheet__card">
+          <a href={'/Datasheet/optoelectronic'} className="datasheet__card">
             <h3 className="datasheet__card-name">Опто- электронные</h3>
             <img
               className="datasheet__card-img"
@@ -96,7 +97,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/microchips"} className="datasheet__card">
+          <a href={'/Datasheet/microchip'} className="datasheet__card">
             <h3 className="datasheet__card-name">Микросхемы</h3>
             <img
               className="datasheet__card-img"
@@ -107,30 +108,30 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/sensor"} className="datasheet__card">
-          <h3 className="datasheet__card-name">Датчики</h3>
-          <img
-            className="datasheet__card-img"
-            src="/images/Datasheet/sensor.jpg"
-            alt="Датчики"
-            width={260}
-            height={300}
-            loading={loading}
-          />
-        </a>
-          <a href={"/Datasheet/electromechanical"} className="datasheet__card">
-          <h3 className="datasheet__card-name">Электро- механические</h3>
-          <img
-            className="datasheet__card-img"
-            src="/images/Datasheet/electomechanical.jpg"
-            alt="Электомеханические"
-            width={260}
-            height={300}
-            loading={loading}
-          />
-        </a>
+          <a href={'/Datasheet/sensor'} className="datasheet__card">
+            <h3 className="datasheet__card-name">Датчики</h3>
+            <img
+              className="datasheet__card-img"
+              src="/images/Datasheet/sensor.jpg"
+              alt="Датчики"
+              width={260}
+              height={300}
+              loading={loading}
+            />
+          </a>
+          <a href={'/Datasheet/electromechanical'} className="datasheet__card">
+            <h3 className="datasheet__card-name">Электро- механические</h3>
+            <img
+              className="datasheet__card-img"
+              src="/images/Datasheet/electomechanical.jpg"
+              alt="Электомеханические"
+              width={260}
+              height={300}
+              loading={loading}
+            />
+          </a>
 
-          <a href={"/Datasheet/antennas"} className="datasheet__card">
+          <a href={'/Datasheet/antenna'} className="datasheet__card">
             <h3 className="datasheet__card-name">Антенны</h3>
             <img
               className="datasheet__card-img"
@@ -141,7 +142,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/protective"} className="datasheet__card">
+          <a href={'/Datasheet/protective'} className="datasheet__card">
             <h3 className="datasheet__card-name">Защитные устройства</h3>
             <img
               className="datasheet__card-img"
@@ -152,8 +153,10 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/quartz"} className="datasheet__card">
-            <h3 className="datasheet__card-name">Кварцевые и частотные элементы</h3>
+          <a href={'/Datasheet/quartz'} className="datasheet__card">
+            <h3 className="datasheet__card-name">
+              Кварцевые и частотные элементы
+            </h3>
             <img
               className="datasheet__card-img"
               src="/images/Datasheet/quartz.jpg"
@@ -163,7 +166,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/power"} className="datasheet__card">
+          <a href={'/Datasheet/power'} className="datasheet__card">
             <h3 className="datasheet__card-name">Источники питания</h3>
             <img
               className="datasheet__card-img"
@@ -174,7 +177,7 @@ export default (props) => {
               loading={loading}
             />
           </a>
-          <a href={"/Datasheet/lamps"} className="datasheet__card">
+          <a href={'/Datasheet/lamp'} className="datasheet__card">
             <h3 className="datasheet__card-name">Лампы</h3>
             <img
               className="datasheet__card-img"
@@ -186,7 +189,6 @@ export default (props) => {
             />
           </a>
         </div>
-
       </section>
     </>
   )
