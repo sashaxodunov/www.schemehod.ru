@@ -127,6 +127,129 @@
   font-family: var(--font-accent), sans-serif;
 }
 
+.ruMC p {
+  text-indent: 25px;
+}
+
+.ruMC table {
+  max-width: 80%;
+}
+
+.ruMC--table__caption {
+  font-family: 'Bebas Neue';
+  font-size: 26px;
+  color: #9bed0c;
+}
+
+.ruMC--img__box--2 {
+  display: flex;
+  gap: 25px;
+}
+
+.ruMC--img {
+  background: #abbbc6;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 10px;
+  max-width: 60%;
+}
+
+.width-size-70 img {
+  max-width: var(--width-size-70);
+}
+.width-size-50 img {
+  max-width: var(--width-size-50);
+}
+
+.ruMC--img__text {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 22px;
+  color: #09c2f8;
+}
+.ruMC--table__line {
+  text-align: center;
+}
+.table__cubTitle {
+  font-size: 20px;
+  text-align: center;
+}
+
+.ruMC--table__not {
+  border-top: 2px solid #fff;
+}
+
+.ruMC--table {
+  margin: 0 auto;
+  border: 3px solid #fff;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  box-shadow: 15px 15px 0 0 #ed6742;
+}
+
+td {
+  border: 1px solid #fff;
+}
+
+th {
+  border: 3px solid #fff;
+}
+
+.ruMC--table__title,
+.ruMC--table__cell {
+  padding: 5px 10px;
+}
+
+.table__cubTitle {
+  color: #d8ef29;
+}
+
+.ruMC--table__left {
+  text-align: left;
+  vertical-align: top;
+}
+
+.ruMC--table__note {
+  margin-left: 180px;
+  margin-right: 180px;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+
+.ruMC--table__note--title {
+  padding-right: 15px;
+}
+
+.ruMC--table__no {
+  border-top: 2px solid #fff;
+}
+
+.ruMC--list__item {
+  margin-left: 50px;
+  list-style-type: circle;
+}
+
+.ruMC--list__item-2 {
+  margin-left: 100px;
+  list-style-type: square;
+}
+.ruMC--list {
+  margin: 10px auto;
+}
+
+.columnXS {
+  max-width: 100px;
+  font-size: 12px;
+}
+
+.ruMC--text a {
+  margin: 0 10px;
+  margin-left: -10px;
+  color: #ed6742;
+  cursor: pointer;
+}
+
 @media (max-width: 600px) {
   .section-datasheet {
     height: auto;
@@ -169,18 +292,18 @@
     gap: 20px 40px;
     margin: 0 auto;
   }
-    .datasheet__card {
-  height: 300px;
-}
+  .datasheet__card {
+    height: 300px;
+  }
 }
 
 @media (max-width: 600px) {
   .datasheet__card {
     border-radius: 10px;
   }
-    .datasheet__card {
-  height: 300px;
-}
+  .datasheet__card {
+    height: 300px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -189,6 +312,5 @@
     gap: 20px 40px;
     margin: 0 auto;
   }
-
 }
 //

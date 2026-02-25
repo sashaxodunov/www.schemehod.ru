@@ -1,5 +1,5 @@
 :root {
-  --accent: #FFD479;
+  --accent: #ffd479;
   --color-white: #ffffff;
   --color-black: #000000;
 
@@ -26,6 +26,12 @@
   --font-accent: 'Bebas Neue';
   --font-roboto: 'Roboto';
 
+  // Размеры рисунков
+  --width-size-90: 90%;
+  --width-size-80: 80%;
+  --width-size-70: 70%;
+  --width-size-50: 50%;
+  --width-size-40: 40%;
 
   --container-width: #{fluid-to-laptop(
       $container-desktop-width,

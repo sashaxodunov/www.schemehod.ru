@@ -23,7 +23,7 @@ export default () => {
             <div className="ruMC--img__box">
               <img
                 className="ruMC--img"
-                src="/images/Datasheet/Microchips/ruMC/К145/K145IK1801/pug.1.png"
+                src="/images/Datasheet/Microchips/ruMC/K145/K145IK1801/pug.1.png"
                 alt=""
               />
               <div className="ruMC--img__text">
@@ -166,7 +166,7 @@ export default () => {
             <div className="ruMC--img__box">
               <img
                 className="ruMC--img"
-                src="/images/Datasheet/Microchips/ruMC/К145/K145IK1801/pug.2.png"
+                src="/images/Datasheet/Microchips/ruMC/K145/K145IK1801/pug.2.png"
                 alt=""
               />
               <div className="ruMC--img__text">
@@ -176,7 +176,7 @@ export default () => {
             <div className="ruMC--img__box">
               <img
                 className="ruMC--img"
-                src="/images/Datasheet/Microchips/ruMC/К145/K145IK1801/pug.3.png"
+                src="/images/Datasheet/Microchips/ruMC/K145/K145IK1801/pug.3.png"
                 alt=""
               />
               <div className="ruMC--img__text">
@@ -210,7 +210,7 @@ export default () => {
             <div className="ruMC--img__box">
               <img
                 className="ruMC--img"
-                src="/images/Datasheet/Microchips/ruMC/К145/K145IK1801/pug.4.png"
+                src="/images/Datasheet/Microchips/ruMC/K145/K145IK1801/pug.4.png"
                 alt=""
               />
               <div className="ruMC--img__text">

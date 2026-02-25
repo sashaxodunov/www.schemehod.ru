@@ -1,7 +1,7 @@
-import './K145ik1807.scss'
+import './K1601PP1.scss'
 
 export default () => {
-  const title = 'Микросхема К145 ИК1807'
+  const title = 'Микросхема К1601 РР1'
 
   return (
     <>
