@@ -29,7 +29,7 @@ export default () => {
               <RuMCCards items={ru145Items} />
             </div>
             <div className="section-datasheet__ruMC-desc"></div>
-            <p>Привет мир</p>
+            <p></p>
           </div>
         </div>
       </section>

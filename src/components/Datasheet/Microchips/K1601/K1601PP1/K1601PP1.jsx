@@ -2,565 +2,281 @@ import './K1601PP1.scss'
 
 export default () => {
   const title = 'Микросхема К1601 РР1'
+  const titleH3 = 'КР1601 РР1, К1601 РР11, КР1601 РР11, К1601 РР12, КР1601 РР12'
 
   return (
     <>
       <section className="section">
         <div className="container">
           <h2 className="section-datasheet-title">{title}</h2>
+          <p className="section-datasheet--title-h3">Модельный ряд</p>
+          <h3 className="section-datasheet-titleH3">{titleH3}</h3>
           <div className="ruMC">
             <p className="ruMC--text">
-              Микросхемы К145ИК1807 по математическому обеспечению ориентирована
-              на решение задач управления технологическими процессами,
-              манипуляторами, электробытовыми приборами и т.п. Она выполняет
-              следующие функции:
+              Микросхемы представляют собой репрограммируемое запоминающее
+              устройство (матрицу-накопитель запоминающего устройства со схемами
+              управления, дешифраторами адреса и усилителями считывания с
+              электрической перезаписью и сохранением информации при отключенных
+              напряжениях питания) емкостью 4 кбит (1кх4) для К1601РР1,
+              КР1601РР1 и модификации емкостью 2 кбит (512х4) для КР1601РР11,
+              КР1601РР12. В ИС предусмотрены 4 режима: общее стирание,
+              избирательное стирание, запись и считывание. Содержат 14832
+              интегральных элемента. Корпус типа
+              <a
+                className="ruMC--body"
+                href="@/pages/Datasheet/microchips/ruMC/K1601/k1601pp1.jsx"
+              >
+                {/*FIXME: нет материала на странице*/}
+                405.24-2
+              </a>
+              масса не более 2,5г и{' '}
+              <a
+                className="ruMC--body"
+                href="@/pages/Datasheet/microchips/ruMC/K1601/k1601pp1.jsx"
+              >
+                {/*FIXME: нет материала на странице*/}
+                2120.24-3
+              </a>
+              , масса не более 5г.
             </p>
 
-            <ul className="ruMC--list">
-              <li className="ruMC--list__item">
-                прием программы управления и исходных данных о времени и
-                состоянии датчиков управляемого объекта;
-              </li>
-              <li className="ruMC--list__item">
-                временное хранение дополнительной информации во внутренней
-                памяти микросхемы, организованной в виде стека,по схеме:
-              </li>
-              <ul className="ruMC--list-2">
-                <li className="ruMC--list__item-2">регистр индикации РИ ➡️</li>
-                <li className="ruMC--list__item-2">регистр памяти М2 ➡️</li>
-                <li className="ruMC--list__item-2">регистр памяти М1 ➡️</li>
-                <li className="ruMC--list__item-2">регистр индикации РИ.</li>
-              </ul>
-              <li className="ruMC--list__item">
-                для запоминания кода управления имеется специальный регистр МКУ;
-                обращение к внутренней памяти микросхемы осуществляется с
-                клавиатуры и по программе;
-              </li>
-              <li className="ruMC--list__item">
-                обращение к внутренней памяти микросхемы осуществляется с
-                клавиатуры и по программе;
-              </li>
-              <li className="ruMC--list__item">работа в режиме таймера;</li>
-              <li className="ruMC--list__item">
-                обращение к внешнему запоминающему устройству и последовательную
-                выборку команд ЗУ для их исполнения;
-              </li>
-              <li className="ruMC--list__item">
-                автоматический поиск программы во внешнем У по номеру,
-                набранному на клавиатуре;
-              </li>
-              <li className="ruMC--list__item">
-                выполнение заданной программы.
-              </li>
-            </ul>
-
             <p className="ruMC--text">
-              Для хранения программ управления используется внешнее ЗУ (ОЗУ,
-              ППЗУ, ПЗУ), входящее в состав модуля управления.
+              Назначение выводов: 1 - адрес X6; 2 - выбор ИС; 3 - вход/выход
+              первого разряда; 4 - корпус; 5 - вход/выход первого разряда; 6...9
+              - адресы Y1, Y2, Y3, Y4; 10 - вход/выход третьего разряда; 11 -
+              вход/выхода четвертого разряда; 12 - напряжение питания (-U
+              <sub>n1</sub>); 13 - считывание; 14 - запись; 15 - напряжение
+              сигнала разрешение Up; 16,17 - свободные; 18 - стирание; 19...23 -
+              адресы X1...X5; 24 - напряжение питания (U<sub>n2</sub>).
             </p>
-            <p className="ruMC--text">
-              При длительном пользовании отлаженной программой управления в
-              модуле применяется ПЗУ. На этапе отладки программы управления
-              функции носителя информации может выполнять оперативное или
-              полупостоянное ЗУ.
-            </p>
-            <p className="ruMC--text">
-              Функциональные возможности микросхемы К145ИК1807 позволяют строить
-              программы управления внешним объектом:
-            </p>
-
-            <ul className="ruMC--list">
-              <li className="ruMC--list__item">
-                с организацией множества циклов повторений тех или иных операций
-                (блока операций);
-              </li>
-              <li className="ruMC--list__item">
-                с остановом и возвратом на начало программы;
-              </li>
-              <li className="ruMC--list__item">
-                с возможностью прерывания программы и выходом на программу
-                продолжения или останова;
-              </li>
-              <li className="ruMC--list__item">
-                с изменением управляющих воздействий по условию состояния
-                датчиков внешних объектов;
-              </li>
-            </ul>
-            <p className="ruMC--text">
-              Минимальный период коммутации исполнительных устройств - 40 ± 2
-              мс.
-            </p>
-            <p className="ruMC--text">
-              Доступ пользователя к модулю управления осуществляется через
-              устройство ввода/вывода, которое имеет в своем составе клавиатуру
-              и индикаторные устройства.
-            </p>
-            <p className="ruMC--text">
-              Условное графическое обозначение микросхемы К145ИК1807 приведено
-              на рис.1, назначение выводов - в табл.1, временная диаграмма
-              работы - на рис.2, структурная схема модуля управления на базе
-              К145ИК1807 - на рис.3
-            </p>
-
             <div className="ruMC--img__box">
               <img
                 className="ruMC--img"
-                src="/images/Datasheet/Microchips/ruMC/K145/K145IK1807/pug.1.png"
+                src="/images/Datasheet/Microchips/ruMC/K1601/K1601PP1/pug.1.png"
                 alt=""
               />
               <div className="ruMC--img__text">
-                Рис. 1. Условное графическое обозначение К145ИК1807.
+                Рис. 1. Условное графическое обозначение K1601РР1, KР1601РР1.
               </div>
             </div>
-
             <div className="ruMC--img__box">
               <img
                 className="ruMC--img"
-                src="/images/Datasheet/Microchips/ruMC/K145/K145IK1807/pug.2.png"
+                src="/images/Datasheet/Microchips/ruMC/K1601/K1601PP1/pug.2.png"
                 alt=""
               />
               <div className="ruMC--img__text">
-                Рис. 2. Временная диаграмма работы К145ИК1807.
+                Рис. 2. Структурная схема KР1601РР1: I - усилители-формирователи
+                адресных сигналов; II - усилители-формирователи управляющих
+                сигналов; III - дешифраторы; V - мультиплексоры; VI - выходные
+                усилители-формирователи, усилители записи
+              </div>
+            </div>
+            <p className="ruMC--text">
+              Примечание. Для К1601РР11 и КР1601РР11 вывод 1 не используется и
+              соединен с выводом 4; для К1601РР12, КР1601РР12 вывод 1 не
+              используется и соединен с выводом 24.
+            </p>
+
+            <div className="specs">
+              <div className="specs__title">Электрические параметры</div>
+              <div className="title">Номинальное напряжение питания:</div>
+
+              <div className="row indent">
+                <div className="label">- Uп1</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">-12 В ± 5%</div>
+              </div>
+
+              <div className="row indent">
+                <div className="label">- Uп2</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">5 В ± 5%</div>
+              </div>
+
+              <div className="row">
+                <div className="label">Выходное напряжение высокого уровня</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&ge; 3,2 В</div>
+              </div>
+
+              <div className="row">
+                <div className="label">Выходное напряжение низкого уровня</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 0,36 В</div>
+              </div>
+
+              <div className="title">
+                Ток потребления при U<sub>п1</sub> = -12В:
+              </div>
+
+              <div className="row indent">
+                <div className="label">
+                  - в режиме &laquo;Не выбор ИС&raquo; К1601РР1, КР1601РР1
+                </div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 15мА</div>
+              </div>
+
+              <div className="row indent">
+                <div className="label">
+                  - в режиме &laquo;Выбор ИС&raquo; К1601РР1, КР1601РР1
+                </div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 30мА</div>
+              </div>
+
+              <div className="row">
+                <div className="label">
+                  Ток потребления по выводу Up К1601РР1, КР1601РР1
+                </div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 8,5 В</div>
+              </div>
+
+              <div className="title">Ток потребления К1601РР1, КР1601РР1:</div>
+
+              <div className="row indent">
+                <div className="label">- в режиме считывания</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 28мА</div>
+              </div>
+
+              <div className="row indent">
+                <div className="label">- в режиме записи</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 30мА</div>
+              </div>
+
+              <div className="row">
+                <div className="label">
+                  Ток утечки на адресных и управляющих входах
+                </div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 7,5 В</div>
+              </div>
+
+              <div className="title">
+                Ток утечки на адресных и управляющих входах
+              </div>
+
+              <div className="row ">
+                <div className="label">
+                  закрытой схемы в режиме &laquo;Не выбор ИС&raquo;
+                </div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 30мА</div>
+              </div>
+
+              <div className="row ">
+                <div className="label">Удельная потребляемая мощность</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">0,14 мВт/бит</div>
+              </div>
+
+              <div className="row ">
+                <div className="label">Время выборки считывания</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 0,8мА</div>
+              </div>
+              <div className="title">
+                Врем сохранения выходного сигнала после подачи
+              </div>
+
+              <div className="row ">
+                <div className="label">сигнала считывания</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&re; 0,1мкс</div>
+              </div>
+
+              <div className="row ">
+                <div className="label">
+                  Количество циклов перезаписи информации по строке
+                </div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">
+                  &le; 10<sup>4</sup>
+                </div>
+              </div>
+              <div className="title">Время хранения информации:</div>
+
+              <div className="row indent">
+                <div className="label">- КР1601РР1</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">5000ч</div>
+              </div>
+
+              <div className="row indent">
+                <div className="label">- КР1601РР11, КР1601РР12</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">250ч</div>
               </div>
             </div>
 
-            <div className="ruMC--img__box">
-              <img
-                className="ruMC--img"
-                src="/images/Datasheet/Microchips/ruMC/K145/K145IK1807/pug.3.png"
-                alt=""
-              />
-              <div className="ruMC--img__text">
-                Рис. 3. Структурная схема модули управления на базе К145ИК1807.
+            <div className="specs">
+              <div className="specs__title">
+                Предельно допустимые режимы эксплуатации
+              </div>
+              <div className="title">Максимальное напряжение питания:</div>
+
+              <div className="row indent">
+                <div className="label">- Uп1</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">-12,6 В</div>
+              </div>
+
+              <div className="row indent">
+                <div className="label">- Uп2</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">5,25 В</div>
+              </div>
+
+              <div className="row">
+                <div className="label">
+                  Максимальное входное напряжение низкого уровня
+                </div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">0,4 В</div>
+              </div>
+
+              <div className="row">
+                <div className="label">Входное напряжение высокого уровня</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 3,5...5,25 В</div>
+              </div>
+
+              <div className="row">
+                <div className="label">
+                  Максимальный выходной ток низкого уровня
+                </div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">&le; 1,8 мА</div>
+              </div>
+
+              <div className="row">
+                <div className="label">Максимальное время спада</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">50 нс</div>
+              </div>
+
+              <div className="row">
+                <div className="label">Максимальное время нарастания</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">50 нс</div>
+              </div>
+
+              <div className="row">
+                <div className="label">Максимальная емкость нагрузки</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">200 пФ</div>
+              </div>
+
+              <div className="row">
+                <div className="label">Температура окружающей среды</div>
+                <div className="dots" aria-hidden="true"></div>
+                <div className="value">-10...+70&deg;С</div>
               </div>
             </div>
-
-            <table className="ruMC--table">
-              <caption className="ruMC--table__caption">Таблица 1</caption>
-              <th className="ruMC--table__title">Вывод</th>
-              <th className="ruMC--table__title">Обозначение</th>
-              <th className="ruMC--table__title">Тип вывода</th>
-              <th className="ruMC--table__title" colSpan={3}>
-                Функциональное назначение вывода
-              </th>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">1 - 4</td>
-                <td className="ruMC--table__cell">
-                  U<sub>C3</sub>, U<sub>C1</sub>, U<sub>C2</sub>, U<sub>C4</sub>
-                </td>
-                <td className="ruMC--table__cell">Входы</td>
-                <td className="ruMC--table__cell" colSpan={3}>
-                  Фазы тактового питания динамических узлов микросхемы
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">7, 8, 10, 11</td>
-                <td className="ruMC--table__cell">D0. 9 - D0. 12</td>
-                <td className="ruMC--table__cell">Входы</td>
-                <td className="ruMC--table__cell" colSpan={3}>
-                  Код операции. <br></br>
-                  Десятки минут/секунд. <br></br>
-                  Минуты. <br></br>
-                  Число циклов повторения. <br></br>
-                  Запоминаемый код (в М2/М1). <br></br>
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">D0. 5 - D0. 8</td>
-                <td className="ruMC--table__cell">UC3, UC1, UC2, UC4</td>
-                <td className="ruMC--table__cell">Входы</td>
-                <td className="ruMC--table__cell" colSpan={3}>
-                  Приращение адреса ЗУ. <br></br>
-                  Признак диапазона минуты/секунды. <br></br>
-                  Минуты/секунды. <br></br>
-                  Признак памяти М1/М2. <br></br>
-                  Запоминаемый код (в М1/М2). <br></br>
-                  Старший разряд адреса смещения (в цикле). <br></br>
-                  Младший разряд адреса смещения (в цикле). <br></br>
-                </td>
-              </tr>
-              <tr className="ruMC--table__line" colSpan={3}>
-                <td className="ruMC--table__cell">14, 16, 17, 19</td>
-                <td className="ruMC--table__cell">D0. 4 - D0. 1</td>
-                <td className="ruMC--table__cell">Входы</td>
-                <td className="ruMC--table__cell" colSpan={3}>
-                  Датчики внешних устройств
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">20</td>
-                <td className="ruMC--table__cell">SYN</td>
-                <td className="ruMC--table__cell">Вход</td>
-                <td className="ruMC--table__cell" colSpan={3}>
-                  Синхронизация (частота импульсов f=50 Гц)
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">21, 22</td>
-                <td className="ruMC--table__cell">W11, W12</td>
-                <td className="ruMC--table__cell">Входы</td>
-                <td className="ruMC--table__cell" colSpan={3}>
-                  Клавиатура
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">24</td>
-                <td className="ruMC--table__cell">GND</td>
-                <td className="ruMC--table__cell">Питание</td>
-                <td className="ruMC--table__cell" colSpan={3}>
-                  Общий
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">28, 31</td>
-                <td className="ruMC--table__cell">C05 - C08</td>
-                <td className="ruMC--table__cell">Выходы</td>
-                <td className="ruMC--table__cell" colSpan={3}>
-                  Управление внешним устройством
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">32 - 35</td>
-                <td className="ruMC--table__cell">C09 - C012</td>
-                <td className="ruMC--table__cell">Выходы</td>
-                <td className="ruMC--table__cell" colSpan={3}>
-                  Счетчик адреса с индикацией. <br></br>
-                  Десятки секунд.
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">36 - 39</td>
-                <td className="ruMC--table__cell">C013 - C016</td>
-                <td className="ruMC--table__cell">Выходы</td>
-                <td className="ruMC--table__cell">
-                  Старший шестнадцатеричный разряд адреса
-                </td>
-                <td className="ruMC--table__cell">-</td>
-                <td className="ruMC--table__cell">-</td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">40 - 43</td>
-                <td className="ruMC--table__cell">C012 - C020</td>
-                <td className="ruMC--table__cell">Выходы</td>
-                <td className="ruMC--table__cell">
-                  Средний шестнадцатеричный разряд адреса
-                </td>
-                <td className="ruMC--table__cell">
-                  Младший шестнадцатеричный разряд кода пороса датчиков
-                </td>
-                <td className="ruMC--table__cell">Десятки минут</td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">44 - 47</td>
-                <td className="ruMC--table__cell">C021 - C024</td>
-                <td className="ruMC--table__cell">Выходы</td>
-                <td className="ruMC--table__cell">
-                  Младший шестнадцатеричный разряд адреса
-                </td>
-                <td className="ruMC--table__cell">
-                  Старший шестнадцатеричный разряд кода опроса датчиков
-                </td>
-                <td className="ruMC--table__cell">Минуты</td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">48</td>
-                <td className="ruMC--table__cell">
-                  U<sub>CC</sub>
-                </td>
-                <td className="ruMC--table__cell">Питание</td>
-                <td className="ruMC--table__cell">Напряжение питания</td>
-              </tr>
-            </table>
-
-            <div className="ruMC--table__note">
-              <span className="ruMC--table__note--title">Примечание.</span>
-              Выводы показаны в последовательности старший - младший разряд.
-            </div>
-            <p className="ruMC--text">
-              В ходе выполнения программы микросхемой осуществляется опрос и
-              анализ датчиков внешних устройств по входам D0.1-D0.4.
-            </p>
-            <p className="ruMC--text">
-              Систему команд К145ИК1807 можно разделить на три группы:
-            </p>
-            <ol className="ruMC--listNumber">
-              <li className="ruMC--listNumber__item">
-                команды внешнего управления: КУ и выполняемые только после КУ -
-                НВ, ВВ<sub>м</sub>, ВВ<sub>с</sub>, ПВ, ОД;
-              </li>
-              <li className="ruMC--listNumber__item">
-                команды обращения к памяти: ЗК, МКУ, М1↑, М2↑, М1+;
-              </li>
-              <li className="ruMC--listNumber__item">
-                команды управления программой: БП, Цикл, ПП, ВП, Стоп.
-              </li>
-            </ol>
-            <p className="ruMC--text">
-              Система команд приведена в таблице 2, структура команд - в таблице
-              3. Время считывания однобайтовой команды 14мс, двухбайтовой 19мс.
-              Временной интервал между опросами датчиков 20мс, длительность
-              опроса датчиков 0,8мс.
-            </p>
-
-            <table className="ruMC--table">
-              <caption className="ruMC--table__caption">Таблица 2</caption>
-              <th className="ruMC--table__title">Символ команды</th>
-              <th className="ruMC--table__title">Название команды</th>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">НВ</td>
-                <td className="ruMC--table__cell">
-                  Занесение полного времени выполнения всей программы
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">
-                  ВВ<sub>с</sub>
-                </td>
-                <td className="ruMC--table__cell">
-                  Занесение времени выполнения операции в секундном интервале
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">
-                  ВВ<sub>м</sub>
-                </td>
-                <td className="ruMC--table__cell">
-                  Занесение времени выполнения операции в минутном интервале
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">КУ</td>
-                <td className="ruMC--table__cell">
-                  Управление исполнительными устройствами и переход по времени в
-                  секундном интервале
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">ПВ</td>
-                <td className="ruMC--table__cell">
-                  Переход по окончании времени в минутном интервале
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">БП</td>
-                <td className="ruMC--table__cell">
-                  Безусловный переход на любого места программы по заданному
-                  адресу
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">ПП</td>
-                <td className="ruMC--table__cell">
-                  Переход на подпрограмму по указанному адресу подпрограммы.
-                  Глубина обращения к подпрограмме 2
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">ОД</td>
-                <td className="ruMC--table__cell">
-                  Опрос датчиков внешних устройств. Код, считываемый с датчиков,
-                  сравнивается с заданным по программе. В соответствии с
-                  результатом осуществляется переход по программе
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">ВП</td>
-                <td className="ruMC--table__cell">
-                  Выход из подпрограммы для выполнения основной программы
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">М1↑</td>
-                <td className="ruMC--table__cell">
-                  Обращение к внутренней памяти М1
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">М2↑</td>
-                <td className="ruMC--table__cell">
-                  Обращение к внутренней памяти М2
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">М1+</td>
-                <td className="ruMC--table__cell">Сложение с памятью М1</td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">МКУ</td>
-                <td className="ruMC--table__cell">
-                  Обращение к памяти кода управления исполнительными
-                  устройствами
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">Цикл</td>
-                <td className="ruMC--table__cell">
-                  Задание числа циклов повторения выполняемой операции (блока
-                  операций). В команде указывается число циклов повторения и
-                  смещения текущего адреса ЗУ, охватывающее повторяемый блок
-                  операций
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">ЗК</td>
-                <td className="ruMC--table__cell">
-                  Занесение кода в память М2 или М1
-                </td>
-              </tr>
-              <tr className="ruMC--table__line">
-                <td className="ruMC--table__cell">Стоп</td>
-                <td className="ruMC--table__cell">Останов программы</td>
-              </tr>
-            </table>
-
-            <table className="ruMC--table">
-              <caption className="ruMC--table__caption">Таблица 3</caption>
-
-              <thead>
-                <tr>
-                  <th className="ruMC--table__title" rowSpan={2}>
-                    Символ команды
-                  </th>
-                  <th className="ruMC--table__title" colSpan={2}>
-                    1-й байт
-                  </th>
-                  <th className="ruMC--table__title" colSpan={2}>
-                    2-й байт
-                  </th>
-                </tr>
-                <tr>
-                  <th className="ruMC--table__title columnXS">
-                    Код операции шестнад- <br></br> цатерич- <br></br>ный
-                  </th>
-                  <th className="ruMC--table__title" colSpan={3}>
-                    Информация
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">М1↑</td>
-                  <td className="ruMC--table__cell">0</td>
-                  <td className="ruMC--table__cell">0</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">ПВ</td>
-                  <td className="ruMC--table__cell">1</td>
-                  <td className="ruMC--table__cell">Приращение адреса ПЗУ</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">ОД</td>
-                  <td className="ruMC--table__cell">2</td>
-                  <td className="ruMC--table__cell">Контроль информации</td>
-                  <td className="ruMC--table__cell" colSpan={2}>
-                    Код опроса датчиков
-                  </td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">ВВ</td>
-                  <td className="ruMC--table__cell">3</td>
-                  <td className="ruMC--table__cell">
-                    0 - диапазон минут <br></br>1 - диапазон секунд
-                  </td>
-                  <td className="ruMC--table__cell">
-                    Десятки минут <br></br>Десятки секунд
-                  </td>
-                  <td className="ruMC--table__cell">
-                    Минуты <br></br>Секунды
-                  </td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">БП</td>
-                  <td className="ruMC--table__cell">4</td>
-                  <td className="ruMC--table__cell" colSpan={3}>
-                    Адрес безусловного перехода
-                  </td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">ПП</td>
-                  <td className="ruMC--table__cell">5</td>
-                  <td className="ruMC--table__cell" colSpan={3}>
-                    Адрес перехода на подпрограмму
-                  </td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">МКУ</td>
-                  <td className="ruMC--table__cell">6</td>
-                  <td className="ruMC--table__cell">0</td>
-                  <td className="ruMC--table__cell" colSpan={2}>
-                    Код управления
-                  </td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">ЗК</td>
-                  <td className="ruMC--table__cell">7</td>
-                  <td className="ruMC--table__cell">
-                    0 - обращение к М2 <br></br>1 - обращение к М1
-                  </td>
-                  <td className="ruMC--table__cell" colSpan={2}>
-                    Заносивый код
-                  </td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">М2↑</td>
-                  <td className="ruMC--table__cell">8</td>
-                  <td className="ruMC--table__cell">0</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">Стоп</td>
-                  <td className="ruMC--table__cell">9</td>
-                  <td className="ruMC--table__cell">0</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">НВ</td>
-                  <td className="ruMC--table__cell">A</td>
-                  <td className="ruMC--table__cell">Десятки секунд</td>
-                  <td className="ruMC--table__cell">Минуты</td>
-                  <td className="ruMC--table__cell">Десятки минут</td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">Цикл</td>
-                  <td className="ruMC--table__cell">B</td>
-                  <td className="ruMC--table__cell">
-                    Старшие разряды адреса смещения
-                  </td>
-                  <td className="ruMC--table__cell">Число циклов повторения</td>
-                  <td className="ruMC--table__cell">
-                    Младшие разряды адреса смещения
-                  </td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">КУ</td>
-                  <td className="ruMC--table__cell">C</td>
-                  <td className="ruMC--table__cell">Приращение адреса ПЗУ</td>
-                  <td className="ruMC--table__cell" colSpan={2}>
-                    Код управления
-                  </td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">ВП</td>
-                  <td className="ruMC--table__cell">D</td>
-                  <td className="ruMC--table__cell">0</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                </tr>
-                <tr className="ruMC--table__line">
-                  <td className="ruMC--table__cell">М1+</td>
-                  <td className="ruMC--table__cell">E</td>
-                  <td className="ruMC--table__cell">0</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                  <td className="ruMC--table__cell">&mdash;</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </section>

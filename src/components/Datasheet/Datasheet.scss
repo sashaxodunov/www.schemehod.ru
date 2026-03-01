@@ -1,3 +1,9 @@
+:root {
+  --text: #284087;
+  --muted: #e67777;
+  --dots: #dda3a3;
+}
+
 .datasheet {
   width: fluid(1300, 600);
 }
@@ -98,6 +104,16 @@
   font-weight: 900;
 
   letter-spacing: 3px;
+}
+
+.section-datasheet--title-h3 {
+  font-size: 22px;
+  color: rgb(215, 166, 131);
+}
+.section-datasheet-titleH3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-style: italic;
 }
 
 .section-datasheet-desc {
@@ -238,6 +254,11 @@ th {
   margin: 10px auto;
 }
 
+.ruMC--body,
+.ruMC--link {
+  text-indent: 0;
+}
+
 .columnXS {
   max-width: 100px;
   font-size: 12px;
@@ -245,9 +266,53 @@ th {
 
 .ruMC--text a {
   margin: 0 10px;
-  margin-left: -10px;
   color: #ed6742;
   cursor: pointer;
+}
+
+.specs {
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+.specs__title {
+  font-size: 24px;
+  text-align: center;
+  color: #afe2f2;
+  -webkit-text-stroke: 2px rgba(57, 56, 56, 0.85);
+  text-shadow:
+    0 2px 6px rgba(176, 88, 88, 0.55),
+    /* мягкая тень вниз */ 0 10px 24px rgba(219, 186, 186, 0.45),
+    /* дальняя тень */ 0 0 18px rgba(146, 118, 118, 0.18); /* лёгкое свечение */
+}
+
+/* Строки с лидерами-точками */
+.row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 12px;
+  align-items: baseline;
+}
+
+.label,
+.title {
+  white-space: nowrap;
+  color: #d8ef29;
+}
+
+.dots {
+  border-bottom: 1px dotted var(--dots);
+  transform: translateY(-2px);
+}
+
+.value {
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+/* Вложенные строки (Uп1, Uп2) */
+.indent {
+  padding-left: 18px;
 }
 
 @media (max-width: 600px) {

@@ -372,6 +372,10 @@ export default (props) => {
       img: '/images/Datasheet/Microchips/Inner/7.jpg',
     },
     {
+      titleCard: '1601',
+      href: '/Datasheet/microchips/ruMC/k1601',
+    },
+    {
       titleCard: '1801',
       titleFrom: '1801',
       titleText:
