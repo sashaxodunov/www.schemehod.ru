@@ -143,7 +143,7 @@
   font-family: var(--font-accent), sans-serif;
 }
 
-.ruMC p {
+.ruMC--text {
   text-indent: 25px;
 }
 
@@ -202,14 +202,17 @@
   margin-top: 50px;
   margin-bottom: 15px;
   box-shadow: 15px 15px 0 0 #ed6742;
+  border-collapse: collapse; /* Убирает двойные границы */
 }
 
 td {
   border: 1px solid #fff;
+  font-size: 12px;
 }
 
 th {
   border: 3px solid #fff;
+  font-size: 14px;
 }
 
 .ruMC--table__title,
@@ -320,6 +323,31 @@ th {
     height: auto;
     padding: 100px 0;
   }
+}
+
+.italic {
+  color: #d9e755;
+  font-style: italic;
+  padding: 5px;
+  text-shadow: #fff;
+}
+
+.rotate {
+  white-space: nowrap;
+  transform: rotate(-90deg);
+  padding: 15px 0;
+  table-layout: fixed;
+  vertical-align: middle;
+}
+
+/*
+  Формулы 
+*/
+.ruMC__formula {
+  text-align: center;
+  margin: 20px;
+  color: #ec77d9;
+  font-style: italic;
 }
 
 //----------------------------------------------------------

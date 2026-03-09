@@ -17,6 +17,10 @@ export default () => {
       titleCard: 'К145ИК1809-К145ИК1810',
       href: '/Datasheet/microchips/ruMC/K145/k145ik1809_k145ik1810',
     },
+    {
+      titleCard: 'К145ИК1812',
+      href: '/Datasheet/microchips/ruMC/K145/k145ik1812',
+    },
   ]
 
   return (
